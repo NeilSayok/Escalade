@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shooter L</string>
+
+    <string name="pref_name">shooter</string>
+    <string name="ip">ipshooter</string>
+    <string name="port">portshooter</string>
+</resources>

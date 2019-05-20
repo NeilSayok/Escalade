@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/superLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/shootLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/rTurnLAy"
+            android:layout_below="@+id/ready">
+
+            <TextView
+                android:id="@+id/fireTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:text="Fire"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fireBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:color/transparent"
+                app:backgroundTint="@color/orange"
+                app:fabCustomSize="80dp" />
+
+        </RelativeLayout>
+
+        <com.erz.joysticklibrary.JoyStick
+            android:id="@+id/movementJS"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            app:buttonColor="#ffffff"
+            app:padColor="#f50e06" />
+
+        <RelativeLayout
+            android:id="@+id/shootLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:id="@+id/fireTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:text="Fire"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fireBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:color/transparent"
+                app:backgroundTint="@color/orange"
+                app:fabCustomSize="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lefttTurnLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/rTurnLAy"
+            android:layout_marginEnd="144dp">
+
+            <TextView
+                android:id="@+id/LturnTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:text="Left"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/LTurnBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:color/transparent"
+                app:backgroundTint="@color/orange"
+                app:fabCustomSize="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rTurnLAy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="49dp"
+            android:layout_marginEnd="35dp">
+
+            <TextView
+                android:id="@+id/rTurnTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:text="Right"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/RturnBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@android:color/transparent"
+                app:backgroundTint="@color/orange"
+                app:fabCustomSize="80dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_bt_red"
+            android:text="OFF"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

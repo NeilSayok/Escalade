@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_square">
+
+    <ImageButton
+        android:id="@+id/LiftDialogClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:paddingEnd="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_round_close_24px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/abc"
+        android:layout_alignEnd="@+id/abc"
+        android:layout_alignStart="@+id/abc"
+        android:paddingBottom="30dp"
+        android:text="Lift Up/Down"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnUP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:fabCustomSize="100dp"
+                app:rippleColor="@android:color/holo_orange_light"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txtUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:text="UP"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:fabCustomSize="100dp"
+                app:rippleColor="@android:color/holo_orange_light"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txtDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:text="DOWN"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/efg"
+        android:layout_alignEnd="@+id/efg"
+        android:layout_alignStart="@+id/efg"
+        android:paddingBottom="30dp"
+        android:text="Lift Push/Pull"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/efg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:fabCustomSize="100dp"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txtPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:text="PUSH"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel2">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnPull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:fabCustomSize="100dp"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txtPull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:text="PULL"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hij"
+        android:layout_alignEnd="@+id/hij"
+        android:layout_alignStart="@+id/hij"
+        android:paddingBottom="30dp"
+        android:text="Lift Forward/Backward"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/hij"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel3">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:fabCustomSize="100dp"
+                app:rippleColor="@android:color/holo_orange_light"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txtForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:text="Forward"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel3">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:fabCustomSize="100dp"
+                app:rippleColor="@android:color/holo_orange_light"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txtBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:text="Back"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/superLayout" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.erz.joysticklibrary.JoyStick
+        android:id="@+id/leftJoyStick"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:padColor="#0699f5"
+        android:layout_marginLeft="20dp"
+        app:buttonColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        />
+    <com.erz.joysticklibrary.JoyStick
+        android:id="@+id/rightJoyStick"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginRight="20dp"
+        app:padColor="#0699f5"
+        app:buttonColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_bt_red"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

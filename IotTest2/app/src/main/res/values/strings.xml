@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Escalade M+</string>
+
+    <string name="pref_name">ip</string>
+    <string name="ip">ip</string>
+    <string name="port">port</string>
+</resources>

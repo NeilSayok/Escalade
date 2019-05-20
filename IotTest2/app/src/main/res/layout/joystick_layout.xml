@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/superLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.erz.joysticklibrary.JoyStick
+        android:id="@+id/leftJoyStick"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:buttonColor="#ffffff"
+        app:padColor="#f50e06" />
+
+    <com.erz.joysticklibrary.JoyStick
+        android:id="@+id/rightJoyStick"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:buttonColor="#ffffff"
+        app:padColor="#f50e06" />
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_bt_red"
+        android:text="OFF"
+        android:textColor="@android:color/white" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/LiftDialogOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/ready"
+        android:layout_marginStart="25dp"
+        android:clickable="true"
+        android:src="@drawable/ic_lift"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:fabCustomSize="70dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/clawDialogOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ready"
+        android:layout_marginEnd="25dp"
+        android:clickable="true"
+        android:src="@drawable/ic_claw"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:fabCustomSize="70dp" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
